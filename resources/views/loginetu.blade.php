@@ -32,7 +32,7 @@
         <section class="py-5">
             <div class="container px-5 mb-5">
                 <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Professeur</span></h1>
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Etudiant</span></h1>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
@@ -45,16 +45,16 @@
                                         <div class="login container grid" id="loginAccessRegister">
                                             <div class="login__register">
                                                 <div class="login__area">
-                                                    <form action="{{ route('login.professor') }}" method="POST" class="login__form">
+                                                    <form action="{{ route('login.student') }}" method="POST" class="login__form">
                                                         @csrf <!-- CSRF token for security -->
                                                         <div class="login__content grid">
                                                             <div class="login__box">
-                                                                <label for="emailCheck" class="login__label">Email : </label> <br>
+                                                                <label for="emailCreate" class="login__label">Email : </label> <br>
                                                                 <input type="email" id="emailCheck" name="email" required placeholder=" " class="login__input">
                                                                 <i class="ri-mail-fill login__icon"></i>
                                                             </div>
                                                             <div class="login__box">
-                                                                <label for="passwordCheck" class="login__label">Mot de passe : </label> <br>
+                                                                <label for="passwordCreate" class="login__label">Mot de passe : </label> <br>
                                                                 <input type="password" id="passwordCheck" name="password" required placeholder=" " class="login__input">
                                                                 <i class="ri-eye-off-fill login__icon login__password" id="loginPasswordCreate"></i>
                                                             </div> 
@@ -69,7 +69,7 @@
                                     <img class="img-fluid" src="{{ asset('image/img5.png')}}" alt="..." />
                                 </div>
                                 <div class="p-3">
-                                    <p>Vous ne possédez pas un compte? <a href="{{ route('registerprof') }}">Créer un compte professeur!</a></p>
+                                    <p>Vous ne possédez pas un compte? <a href="{{ route('registeretu') }}">Créer un compte étudiant!</a></p>
                                 </div>
                             </div>
                         </div>

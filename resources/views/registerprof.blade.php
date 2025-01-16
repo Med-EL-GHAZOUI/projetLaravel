@@ -41,26 +41,33 @@
                             <div class="card-body p-0">
                                 <div class="d-flex align-items-center">
                                     <div class="p-5">
-                                    <h2 class="fw-lighter">Se connecter</h2>
+                                    <h2 class="fw-lighter">Créer compte</h2>
                                         <div class="login container grid" id="loginAccessRegister">
                                             <div class="login__register">
                                                 <div class="login__area">
-                                                    <form action="{{ route('login.professor') }}" method="POST" class="login__form">
+                                                    <form action="{{ route('register.professor') }}" method="POST" class="login__form">
                                                         @csrf <!-- CSRF token for security -->
                                                         <div class="login__content grid">
+                                                            <div class="login__group grid">
+                                                                <div class="login__box"> 
+                                                                    <label for="names" class="login__label"> Nom complet : </label> <br> 
+                                                                    <input type="text" id="names" name="name" required placeholder=" " class="login__input">
+                                                                    <i class="ri-id-card-fill login__icon"></i>
+                                                                </div>
+                                                            </div>
                                                             <div class="login__box">
-                                                                <label for="emailCheck" class="login__label">Email : </label> <br>
-                                                                <input type="email" id="emailCheck" name="email" required placeholder=" " class="login__input">
+                                                                <label for="emailCreate" class="login__label">Email : </label> <br>
+                                                                <input type="email" id="emailCreate" name="email" required placeholder=" " class="login__input">
                                                                 <i class="ri-mail-fill login__icon"></i>
                                                             </div>
                                                             <div class="login__box">
-                                                                <label for="passwordCheck" class="login__label">Mot de passe : </label> <br>
-                                                                <input type="password" id="passwordCheck" name="password" required placeholder=" " class="login__input">
+                                                                <label for="passwordCreate" class="login__label">Mot de passe : </label> <br>
+                                                                <input type="password" id="passwordCreate" name="password" required placeholder=" " class="login__input">
                                                                 <i class="ri-eye-off-fill login__icon login__password" id="loginPasswordCreate"></i>
                                                             </div> 
                                                         </div>
                                                         <br>
-                                                        <button type="submit" class="btn btn-primary">Se connecter</button>
+                                                        <button type="submit" class="btn btn-primary">Créer</button>
                                                     </form>
                                                 </div>
                                             </div>
@@ -69,7 +76,7 @@
                                     <img class="img-fluid" src="{{ asset('image/img5.png')}}" alt="..." />
                                 </div>
                                 <div class="p-3">
-                                    <p>Vous ne possédez pas un compte? <a href="{{ route('registerprof') }}">Créer un compte professeur!</a></p>
+                                    <p>Vous avez déjà un compte? <a href="{{ route('loginprof') }}">Connectez-vous en tant que professeur!</a></p>
                                 </div>
                             </div>
                         </div>

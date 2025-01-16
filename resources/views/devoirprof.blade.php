@@ -24,7 +24,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container px-5">
-                <a class="navbar-brand" href="#"><span class="fw-bolder text-primary">EduSimsim</span></a>
+                <a class="navbar-brand" href="/"><span class="fw-bolder text-primary">EduSimsim</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
             </div>
@@ -46,8 +46,8 @@
 
                     <!-- Sélectionner le type de devoir -->
                     <div class="form-group">
-                        <label for="assignment_type">Sélectionnez le type de devoir</label>
-                        <select name="assignment_type" id="assignment_type" class="form-control" required>
+                        <label for="devoir_type">Sélectionnez le type de devoir</label>
+                        <select name="devoir_type" id="devoir_type" class="form-control" required>
                             <option value="js">JavaScript</option>
                             <option value="sql">SQL</option>
                             <option value="php">PHP</option>
@@ -56,8 +56,8 @@
 
                     <!-- Téléchargement du fichier -->
                     <div class="form-group">
-                        <label for="assignment_file">Partagez le devoir</label>
-                        <input type="file" name="assignment_file" id="assignment_file" class="form-control" required>
+                        <label for="devoir_fichier">Partagez le devoir</label>
+                        <input type="file" name="devoir_fichier" id="devoir_fichier" class="form-control" required>
                     </div>
                     <br>
                     <button type="submit" class="btn btn-primary">Partagez</button>

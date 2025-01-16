@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Signaler un problème</title>
+    <title>Modern Business - Start Bootstrap Template</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Custom Google font-->
@@ -41,33 +41,31 @@
                             <div class="card-body p-0">
                                 <div class="d-flex align-items-center">
                                     <div class="p-5">
-                                        <center>
-                                            <h2 class="fw-bolder"></h2>
-                                        </center>
+                                    <h2 class="fw-bolder"></h2>
                                         <div class="login container grid" id="loginAccessRegister">
                                             <div class="login__register">
                                                 <div class="login__area">
-                                                    <!--Display success message-->
-                                                    @if (session('success'))
-                                                    <p style="color: green;">{{ session('success') }}</p>
-                                                    @endif
-                                                    <!--Display error message-->
-                                                    <form action="{{ route('problems.store') }}" method="POST">
-                                                        @csrf
-                                                        <div>
-                                                            <label for="name">Nom :</label>
-                                                            <input type="text" id="name" name="name" required>
-                                                        </div>
-                                                        <div>
-                                                            <label for="email">Email :</label>
-                                                            <input type="email" id="email" name="email" required>
-                                                        </div>
-                                                        <div>
-                                                            <label for="description">Description du problème :</label>
-                                                            <textarea id="description" name="description" required></textarea>
-                                                        </div>
-                                                        <button type="submit">Envoyer</button>
-                                                    </form>
+
+                                                        @if (session('success'))
+                                                            <p style="color: green;">{{ session('success') }}</p>
+                                                        @endif
+
+                                                        <form action="{{ route('problems.store') }}" method="POST">
+                                                            @csrf
+                                                            <div>
+                                                                <label for="name">Nom :</label>
+                                                                <input type="text" id="name" name="name" required>
+                                                            </div>
+                                                            <div>
+                                                                <label for="email">Email :</label>
+                                                                <input type="email" id="email" name="email" required>
+                                                            </div>
+                                                            <div>
+                                                                <label for="description">Description du problème :</label>
+                                                                <textarea id="description" name="description" required></textarea>
+                                                            </div>
+                                                            <button type="submit">Envoyer</button>
+                                                        </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -76,6 +74,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
