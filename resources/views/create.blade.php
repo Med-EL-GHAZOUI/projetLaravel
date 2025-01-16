@@ -47,11 +47,11 @@
                                         <div class="login container grid" id="loginAccessRegister">
                                             <div class="login__register">
                                                 <div class="login__area">
-
+                                                    <!--Display success message-->
                                                     @if (session('success'))
                                                     <p style="color: green;">{{ session('success') }}</p>
                                                     @endif
-
+                                                    <!--Display error message-->
                                                     <form action="{{ route('problems.store') }}" method="POST">
                                                         @csrf
                                                         <div>
@@ -76,7 +76,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

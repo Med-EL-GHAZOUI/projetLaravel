@@ -26,7 +26,6 @@
             <div class="container px-5">
                 <a class="navbar-brand" href="#"><span class="fw-bolder text-primary">EduSimsim</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
             </div>
         </nav>
         <!-- Projects Section-->
@@ -37,6 +36,7 @@
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Contenu de la carte pour chaque devoir -->
                         @foreach($devoirs as $devoir)
                             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                                 <div class="card-body p-5">
